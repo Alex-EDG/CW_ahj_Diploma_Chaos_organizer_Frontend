@@ -1,5 +1,7 @@
 *CI* [![Build status](https://ci.appveyor.com/api/projects/status/22locrbft36f9n6t?svg=true)](https://ci.appveyor.com/project/Alex-EDG/cw-ahj-diploma-chaos-organizer-frontend)
 
+[![Github Pages](https://github.com/Alex-EDG/CW_ahj_Diploma_Chaos_organizer_Frontend)]
+
 # Chaos Organizer
 [!Chaos Organizer - Backend](https://cw-ahj-diploma-chaos-organizer-back.vercel.app)
 ## Основные функции:

@@ -1,0 +1,32 @@
+.searchFormWrp {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  border-top: 1px solid #4f527d;
+  width: 100%;
+  height: fit-content;
+  color: #27293E;
+  padding: 0.5rem;
+  background-color: #27293E;
+  font-size: 1rem;
+}
+
+.searchForm {
+  display: flex;
+  padding: 0.5rem;
+  width: 300px;
+  background-color: #E8EDDE;
+}
+
+.searchInput {
+  padding: 0;
+  flex: 1;
+  border: none;
+  background-color: #E8EDDE;
+}
+
+.searchInput:focus {
+  outline: none;
+}

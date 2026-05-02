@@ -1,0 +1,30 @@
+.forms {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  background-color: #E8EDDE;
+  box-shadow: 0 -1px 1px #88A154;
+}
+
+.visibleForm {
+  display: inline-flex;
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
+}

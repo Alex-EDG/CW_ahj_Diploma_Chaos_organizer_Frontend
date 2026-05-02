@@ -1,0 +1,18 @@
+.optionsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 1rem 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.optionBtn:nth-child(odd) {
+  margin-right: 0.7rem;
+}
+
+.optionBtn:nth-child(-n+2) {
+  margin-bottom: 0.7rem;
+}

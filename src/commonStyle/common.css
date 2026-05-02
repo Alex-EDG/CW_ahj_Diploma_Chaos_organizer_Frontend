@@ -1,0 +1,98 @@
+html {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  overscroll-behavior-y: none;
+}
+
+body {
+  overscroll-behavior-y: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: dimgrey;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #306a19;
+  text-decoration: none;
+}
+
+a:active {
+  color: #F0B227;
+}
+
+a:hover {
+  color: #F0B227;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.centralPart {
+  width: 1400px;
+  min-width: 30rem;
+  max-width: 80%;
+  margin: auto;
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  background-color: #27293E;
+}
+
+.nameAndNav {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  margin: 1rem 0;
+  padding: 0 2rem;
+}
+
+.sectionName {
+  font-size: 1.8rem;
+  color: #E8EDDE;
+}
+
+.headerButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.mainContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex: 1;
+  background-color: #88A154;
+}
+
+.pinAndAlertMessages {
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 0.5rem;
+}

@@ -1,0 +1,48 @@
+.containerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  background-color: #E8EDDE;
+  border-radius: 8px;
+  color: #27293E;
+}
+
+.typeImgAndDescription {
+  flex: 1;
+  display: flex;
+  gap: 2rem;
+}
+
+.typeFileImg {
+  width: 2rem;
+  height: 2rem;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+}
+
+.videoFile {
+  background-image: url("../../img/fileVideo.svg");
+}
+
+.audioFile {
+  background-image: url("../../img/fileAudio.svg");
+}
+
+.imgFile {
+  background-image: url("../../img/fileImg.svg");
+}
+
+.anotherFile {
+  background-image: url("../../img/fileAnother.svg");
+}
+
+.contentMessageDescription {
+  color: #27293E;
+  font-size: 1.5rem;
+  vertical-align: center;
+}

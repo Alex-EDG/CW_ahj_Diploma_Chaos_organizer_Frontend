@@ -1,0 +1,10 @@
+.dateMsgWrp {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  background-color: #E8EDDE;
+  font-size: 0.8rem;
+  color: #27293E;
+  opacity: 0.9;
+}

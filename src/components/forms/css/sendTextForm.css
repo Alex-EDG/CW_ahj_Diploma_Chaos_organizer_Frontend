@@ -1,0 +1,32 @@
+.sendText {
+  display: inline-flex;;
+  gap: 1rem;
+  align-items: center;
+  margin: 1.5rem 1rem;
+  width: 100%;
+  background-color: #E8EDDE;
+}
+
+.textInput {
+  flex: 1;
+  padding: 0.5rem 0;
+  border: none;
+  background-color: inherit;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #27293E;
+  resize: none;
+  overflow: hidden;
+}
+
+.textInput::placeholder {
+  padding-top: 1.5%;
+}
+
+.textInput:focus {
+  outline: none;
+}
+
+.textInput:active {
+  background-color: inherit;
+}

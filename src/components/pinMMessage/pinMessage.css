@@ -1,0 +1,56 @@
+.pin {
+  box-sizing: border-box;
+  display: none;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #b5c18a;
+  border-radius: 8px;
+  background-color: #bfca9b;
+  color: #27293E;
+}
+
+.pinImg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: 0.7rem;
+  background-color: inherit;
+  background-image: url("../../img/pin.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+/* Styles of type of file is in contentMessage.css*/
+.pinFile {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.mainTextAndDate {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pinText {
+  vertical-align: center;
+  font-size: 0.9rem;
+  word-break: break-word;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+.pinDate {
+  align-self: end;
+  font-size: 0.7rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+

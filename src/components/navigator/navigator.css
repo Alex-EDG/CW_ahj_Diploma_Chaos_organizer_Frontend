@@ -1,0 +1,29 @@
+.navigator {
+  position: absolute;
+  z-index: 100;
+  display: inline-flex;
+  box-sizing: border-box;
+  width: 100%;
+  border-top: 1px solid #4f527d;
+  background-color: #27293E;
+}
+
+.navContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0;
+}
+
+.contentTypesButtons {
+  position: absolute;
+  top: 100%;
+  display: inline-flex;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-top: 1px solid #4f527d;
+  background-color: #27293E;
+}

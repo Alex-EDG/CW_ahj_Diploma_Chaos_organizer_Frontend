@@ -1,0 +1,359 @@
+.btn {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: #27293E;
+  padding: 0;
+  border-radius: 8px;
+  border: none;
+  background-color: #F0B227;
+}
+
+.searchBtn {
+  width: 3rem;
+  height: 3rem;
+}
+
+.searchBtn::after {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  margin: auto;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.resetBtn {
+  width: 3rem;
+  height: 3rem;
+}
+
+.resetBtn::after {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  margin: auto;
+  background-image: url("../img/reset.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Search form submit button*/
+
+.submitSearchForm {
+  width: 1rem;
+  height: 1rem;
+  border: none;
+  background-color: inherit;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.2;
+}
+
+/* Geolocation form submit button*/
+
+.submitAddGeolocationForm {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  border: none;
+  background-color: inherit;
+  background-image: url("../img/ok.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.2;
+}
+
+/*Navigator buttons*/
+#toggleNavBtn {
+  width: 3rem;
+  height: 3rem;
+}
+
+#toggleNavBtn::after {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  margin: auto;
+  background-image: url("../img/nav.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.navBtnStyle {
+  flex: 1;
+  font-size: 1.5rem;
+  color: #E8EDDE;
+  background-color: inherit;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.navBtnStyle:hover {
+  background-color: #3a3d5f;
+}
+
+.chooseTypeContent {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  padding: 0.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #E8EDDE;
+}
+
+.chooseVideo::after {
+  content: '';
+  width: 1.2rem;
+  height: 1.2rem;
+  display: block;
+  background-image: url("../img/fileVideo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.chooseAudio::after {
+  content: '';
+  width: 1.2rem;
+  height: 1.2rem;
+  display: block;
+  background-image: url("../img/fileAudio.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.chooseImg::after {
+  content: '';
+  width: 1.2rem;
+  height: 1.2rem;
+  display: block;
+  background-image: url("../img/fileImg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.chooseAnotherType::after {
+  content: '';
+  width: 1.2rem;
+  height: 1.2rem;
+  display: block;
+  background-image: url("../img/fileAnother.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.chooseTypeContent:hover {
+  background-color: #3a3d5f;
+}
+
+/*buttons for forms*/
+.formBtn {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  padding: 0.45rem;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #F0B227;
+}
+
+.changeFormBtn {
+  margin-right: 1rem;
+}
+
+.toFileFormBtn::after {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  background-image: url("../img/add-file.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.toTextFormBtn::after {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  background-image: url("../img/text.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.enterBtn::after {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  background-image: url("../img/ok.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* Message options button*/
+
+.msgOptionsBtn {
+  width: 1rem;
+  height: 1rem;
+  border: none;
+  padding: 0;
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.showOptions {
+  background-image: url("../img/message-options.svg");
+}
+
+.update {
+  background-image: url("../img/update.svg");
+}
+
+.toPin {
+  background-image: url("../img/pin.svg");
+}
+
+.delete {
+  background-image: url("../img/delete.svg");
+}
+
+.toFavorite {
+  background-image: url("../img/add-to-favorite.svg");
+}
+
+.unFavorite {
+  background-image: url("../img/unfavorite.svg");
+}
+
+/*Content buttons*/
+
+.contentControlsBtn {
+  box-sizing: border-box;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  padding: 0 0.26rem;
+  border-radius: 8px;
+  background-color: #88A154;
+}
+
+.loadBtn::after {
+  content: '';
+  display: block;
+  margin-top: 0.25rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url("../img/load.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.playBtn::after {
+  content: '';
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url("../img/play.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.stopBtn::after {
+  content: '';
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url("../img/stop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.muteBtn::after {
+  content: '';
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url("../img/volume-off.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.unMuteBtn::after {
+  content: '';
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url("../img/volume-unmute.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.volumeUp::after {
+  content: '';
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url("../img/volume-high.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.volumeDown::after {
+  content: '';
+  display: block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url("../img/volume-low.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.inactive {
+  background-color: #b5c18a;
+  pointer-events: none;
+}
+
+/*Pin remove button*/
+
+.removePinBtn {
+  width: 1.4rem;
+  height: 1.4rem;
+  border: none;
+  padding: 0;
+  border-radius: 8px;
+  background-color: inherit;
+  background-image: url("../img/remove.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}

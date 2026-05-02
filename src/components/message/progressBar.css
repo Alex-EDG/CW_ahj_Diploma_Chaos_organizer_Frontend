@@ -1,0 +1,35 @@
+.progressWRP {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.progressBar {
+  flex: 1;
+  height: 1rem;
+  border: 1px solid #b5c18a;
+  border-radius: 4px;
+}
+
+.progressBar::-webkit-progress-bar {
+  background-color: #b5c18a;
+  border-radius: 4px;
+}
+
+.progressBar::-webkit-progress-value {
+  background-color: #F0B227;
+  border-radius: 0;
+}
+
+.progressBar::-moz-progress-bar {
+  background-color: #F0B227;
+}
+
+.progressText {
+  min-width: 15%;
+  max-width: fit-content;
+  font-size: 0.8rem;
+  text-align: end;
+}

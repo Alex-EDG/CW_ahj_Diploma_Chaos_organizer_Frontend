@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chaos Organizer</title>
+</head>
+<body id="root">
+    <header class="header">
+        <div class="nameAndNav centralPart">
+            <h1 class="sectionName">Messages</h1>
+            <div class="headerButtons">
+                <button class="btn resetBtn tooltip" id="resetBtn" title="Reset to default data base"></button>
+                <button class="btn searchBtn" id="searchBtn" title="Show search form"></button>
+                <button class="btn showNav" id="toggleNavBtn" title="Show menu"></button>
+            </div>
+        </div>
+    </header>
+    <main class="mainContainer centralPart">
+        <div class="searchFormWrp hidden">
+            <form class="searchForm">
+                <input class="searchInput" maxlength="20" name="search" placeholder="Search" required>
+                <button class="submitSearchForm" title="Search"></button>
+            </form>
+        </div>
+        <nav class="navigator hidden">
+            <button class="navBtnStyle navBtn showMessageBtn">Messages</button>
+            <button class="navBtnStyle navBtn showFavoritesBtn">Favorites</button>
+            <div class="navContent">
+                <button class="navBtnStyle navBtn showContentBtn">Content</button>
+                <div class="contentTypesButtons hidden">
+                    <button class="chooseTypeContent chooseVideo" data-type="video" title="Video"></button>
+                    <button class="chooseTypeContent chooseAudio" data-type="audio" title="Audio"></button>
+                    <button class="chooseTypeContent chooseImg" data-type="image" title="Images"></button>
+                    <button class="chooseTypeContent chooseAnotherType" data-type="anotherType" title="Another types"></button>
+                </div>
+            </div>
+        </nav>
+        <div class="pinAndAlertMessages">
+            <div class="pin">
+                <div class="pinImgAndPinFile">
+                    <div class="pinImg"></div>
+                    <div class="pinFile"></div>
+                </div>
+                <div class="mainTextAndDate">
+                    <span class="pinDate"></span>
+                    <span class="pinText"></span>
+                </div>
+                <button class="removePinBtn" title="Unpin Message"></button>
+            </div>
+            <div class="alertMessage">
+                <span class="alert"></span>
+            </div>
+        </div>
+        <div class="contentView container"></div>
+        <div class="forms">
+            <form class="sendText form">
+                <textarea class="textInput" maxlength="200" name="text" placeholder="Enter the text of your message" required></textarea>
+                <button class="formBtn enterBtn" title="Send message"></button>
+            </form>
+            <form class="sendFile form hidden">
+                <input class="fileInput" name="file" type="file" title="Add file">
+                <button class="formBtn visibleFileInput" type="button" title="Add file"></button>
+                <div class="dataChosenFile">
+                    <div class="chosenFileType"></div>
+                    <span class="chosenFileName"></span>
+                </div>
+                <textarea class="inputDescribe" maxlength="100" name="text" placeholder="Enter the describe of the file"
+                required></textarea>
+                <button class="formBtn enterBtn" title="Send message"></button>
+            </form>
+            <button class="formBtn changeFormBtn toFileFormBtn" title="Change form"></button>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,122 @@
+.sendFile {
+  position: relative;
+  display: inline-flex;;
+  justify-content: end;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin: 1.5rem 1rem;
+  background-color: #E8EDDE;
+}
+
+.fileInput {
+  position: absolute;
+  top: 8%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  opacity: 0.1;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.visibleFileInput {
+  position: absolute;
+  top: 8%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.visibleFileInput::after {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  position: absolute;
+  top: 18%;
+  left: 20%;
+  background-image: url("../../../img/add-file.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.dataChosenFile {
+  display: none;
+  gap: 0.5rem;
+  align-items: center;
+  width: 25%;
+}
+
+.chosenFileName {
+  display: block;
+  width: 80%;
+  height: 2rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #27293E;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  direction: ltr;
+}
+
+.chosenFileType {
+  width: 2rem;
+  height: 2rem;
+
+  background-color: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.typeImg {
+  background-image: url("../../../img/fileImg.svg");
+}
+
+.typeVideo {
+  background-image: url("../../../img/fileVideo.svg");
+}
+
+.typeAudio {
+  background-image: url("../../../img/fileAudio.svg");
+}
+
+.typeAnother {
+  background-image: url("../../../img/fileAnother.svg");
+}
+
+
+.inputDescribe {
+  display: none;
+  width: 50%;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: inherit;
+  color: #27293E;
+  resize: none;
+}
+
+.inputDescribe:focus {
+  outline: none;
+}
+
+.inputDescribe::placeholder {
+  padding-top: 3%;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 9999px #E8EDDE;
+}

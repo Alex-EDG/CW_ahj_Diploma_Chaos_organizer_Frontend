@@ -1,4 +1,4 @@
-*CI* [![Build status](https://ci.appveyor.com/api/projects/status/sbr9xbu49yvbt1wl?svg=true)](https://ci.appveyor.com/project/Alex-EDG/chaos-organaizer)
+*CI* [![Build status](https://ci.appveyor.com/api/projects/status/22locrbft36f9n6t?svg=true)](https://ci.appveyor.com/project/Alex-EDG/cw-ahj-diploma-chaos-organizer-frontend)
 
 # Chaos Organizer
 [!Chaos Organizer - Backend](https://cw-ahj-diploma-chaos-organizer-back.vercel.app)

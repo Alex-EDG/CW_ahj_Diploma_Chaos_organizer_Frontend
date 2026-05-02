@@ -1,26 +1,25 @@
 {
-  "name": "chaos-organaizer",
+  "name": "cw-ahj-diploma-chaos-organizer-frontend",
   "version": "1.0.0",
-  "description": "",
-  "main": "webpack.config.js",
-  "scripts": {
+  "description": "Дипломное задание к курсу «Продвинутый JavaScript в браузере». Chaos Organizer - Frontend",
+  "main": "index.js",
+    "scripts": {
     "build": "webpack --mode production",
     "start": "webpack serve --mode development",
-    "babel": "babel src -d dist",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "echo I have no tests yet"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/0spailona/Chaos-Organaizer.git"
+    "url": "git+ssh://git@github.com/Alex-EDG/CW_ahj_Diploma_Chaos_organizer_Frontend.git"
   },
-  "author": "0spailona",
+  "author": "Alexey Neronov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/0spailona/Chaos-Organaizer/issues"
+    "url": "https://github.com/Alex-EDG/CW_ahj_Diploma_Chaos_organizer_Frontend/issues"
   },
-  "homepage": "https://github.com/0spailona/Chaos-Organaizer#readme",
+  "homepage": "https://github.com/Alex-EDG/CW_ahj_Diploma_Chaos_organizer_Frontend#readme",
   "devDependencies": {
     "@babel/cli": "^7.23.4",
     "@babel/core": "^7.23.7",

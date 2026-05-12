@@ -6,7 +6,7 @@ export default class Api extends emitter {
   constructor(url) {
     super();
     this.url = url;
-    const eventSourse = new EventSource(`${url}/sse`, {withCredentials: true});
+    const eventSourse = new EventSource(`${url}/sse`, {withCredentials: false});
     eventSourse.addEventListener("open", this.onOpen.bind(this));
     eventSourse.addEventListener("error", this.onError.bind(this));
     eventSourse.addEventListener("newMessage", this.onNewMessage.bind(this));
@@ -58,7 +58,7 @@ export default class Api extends emitter {
     const url = this.url + `/messages/reset`;
     const request = fetch(url, {
       method: "POST",
-      credentials: "include",
+      credentials: "omit",
     });
     const result = await request;
     if (result.status !== 200) {
@@ -90,7 +90,7 @@ export default class Api extends emitter {
     const headers = this.createHeaders(coords, file);
     const request = fetch(url, {
       method: "POST",
-      credentials: "include",
+      credentials: "omit",
       headers,
       body: file
     });
@@ -107,7 +107,7 @@ export default class Api extends emitter {
     const url = this.url + `/messages/text`;
     const request = fetch(url, {
       method: "POST",
-      credentials: "include",
+      credentials: "omit",
       headers,
       body: text
     });
@@ -138,7 +138,7 @@ export default class Api extends emitter {
     }
     const request = fetch(url, {
       method: "GET",
-      credentials: "include"
+      credentials: "omit"
     });
     const result = await request;
     if (!result.ok) {
@@ -153,7 +153,7 @@ export default class Api extends emitter {
     const url = this.url + `/messages/${id}`;
     const request = fetch(url, {
       method: "PATCH",
-      credentials: "include",
+      credentials: "omit",
       body: isFavorite
     });
     const result = await request;
@@ -168,7 +168,7 @@ export default class Api extends emitter {
     const url = this.url + `/messages/pin`;
     const request = fetch(url, {
       method: "PUT",
-      credentials: "include",
+      credentials: "omit",
       body: id
     });
     const result = await request;
@@ -183,7 +183,7 @@ export default class Api extends emitter {
     const url = this.url + `/messages/pin`;
     const request = fetch(url, {
       method: "DELETE",
-      credentials: "include",
+      credentials: "omit",
     });
     const result = await request;
     if (!result.ok) {
@@ -196,7 +196,7 @@ export default class Api extends emitter {
     const url = this.url + `/messages/${id}`;
     const request = fetch(url, {
       method: "DELETE",
-      credentials: "include",
+      credentials: "omit",
     });
     const result = await request;
     if (!result.ok) {
@@ -210,7 +210,7 @@ export default class Api extends emitter {
     const url = this.url + `/messages/pin`;
     const request = fetch(url, {
       method: "GET",
-      credentials: "include",
+      credentials: "omit",
     });
     const result = await request;
     if (result.status !== 200) {
